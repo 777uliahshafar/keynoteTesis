@@ -17,7 +17,7 @@
 
 % Farben anpassen
 \setbeamercolor{section number projected}{bg=digiPH_darkorange}
-%\setbeamercolor{frametitle}{fg=digiPH_darkorange,bg=white}
+\setbeamercolor{frametitle}{fg=digiPH_darkorange,bg=white}
 \setbeamercolor{itemize item}{fg=digiPH_darkorange}
 \setbeamercolor{itemize subitem}{fg=digiPH_darkorange}
 \setbeamercolor{enumerate item}{fg=digiPH_darkorange}
@@ -40,6 +40,15 @@
 	\def\beamer@entrycode{\vspace*{-\headheight}}%
 	\setbeamertemplate{footline}{}
 }{}
+
+% Show line in frametitle
+\setbeamertemplate{frametitle}{%
+    \usebeamerfont{frametitle}\insertframetitle\strut%
+    \vskip-.25\baselineskip%
+    \leaders\vrule width \paperwidth\vskip0.4pt%
+    \vskip0pt%
+    \nointerlineskip
+}
 
 % Titelseite
 \setbeamertemplate{title page}{%
