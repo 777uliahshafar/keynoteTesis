@@ -18,7 +18,10 @@
 \definecolor{digiPH_blue}{rgb}{0.357,0.608,0.835}
 
 % Farben anpassen
-\setbeamercolor{title}{fg=digiPH_orange}
+\setbeamercolor{title}{fg=digiPH_darkblue}
+\setbeamercolor{author}{fg=digiPH_darkblue}
+\setbeamercolor{date}{fg=digiPH_darkblue!80}
+\setbeamercolor{institute}{fg=digiPH_darkblue!80}
 \setbeamercolor{section number projected}{bg=digiPH_darkorange}
 \setbeamercolor{frametitle}{fg=digiPH_darkblue,bg=white}
 \setbeamercolor{itemize item}{fg=digiPH_darkblue}
@@ -34,7 +37,7 @@
 \setbeamercolor{subsection in toc shaded}{fg=digiPH_darkblue!50}
 \setbeamercolor{subsection in toc}{fg=digiPH_darkblue!150}
 
-\pgfdeclareimage[width=.25\paperwidth]{large-logo}{Undip-logo}
+\pgfdeclareimage[width=.26\paperwidth]{large-logo}{Undip-logo}
 \pgfdeclareimage[width=\paperwidth]{footer}{footer}
 
 % Navigationssymbole ausschalten
@@ -57,34 +60,48 @@
 }
 
 % Titelseite
-\setbeamertemplate{title page}{%
+%\setbeamertemplate{title page}{%
+%
+%	% Titel
+%	\vskip0pt plus 1fill
+%	\colorbox{digiPH_orange!80}{\begin{minipage}{\textwidth}
+%		\usebeamerfont{title}\centering{\inserttitle\par}
+%	\end{minipage}}
+%	% obere Logos
+%	\vskip0pt plus 1fill
+%	\centering{\includegraphics[width=1.8cm]{logos/logo}}
+%	\vskip0pt plus 1fill
+%	\begin{minipage}{.95\textwidth}
+%		\usebeamerfont{title}\centering{\insertsubtitle\par}
+%	\end{minipage}
+%
+%	% vertikaler Abstand
+%	\vskip0pt plus 1fill
+%    \begin{center}
+%    \begin{tabular}{c c}
+%%
+%    \insertauthor & \insertinstitute\\
+%    \end{tabular}
+%    \end{center}
+%%
+%%	% unteres Logo
+%%%	\includegraphics[width=8cm,height=3cm]{logos/hor_logo}
+%%
+%}
 
-	% Titel
-	\vskip0pt plus 1fill
-	\colorbox{digiPH_orange!80}{\begin{minipage}{\textwidth}
-		\usebeamerfont{title}\centering{\inserttitle\par}
-	\end{minipage}}
-	% obere Logos
-	\vskip0pt plus 1fill
-	\centering{\includegraphics[width=1.8cm]{logos/logo}}
-	\vskip0pt plus 1fill
-	\begin{minipage}{.95\textwidth}
-		\usebeamerfont{title}\centering{\insertsubtitle\par}
-	\end{minipage}
+\addtobeamertemplate{title page}{%
+\begin{pgfpicture}
+\pgf@relevantforpicturesizefalse
+\pgftransformxshift{-\Gm@lmargin}
+\pgftransformyshift{25pt}
+\pgfpathrectanglecorners{\pgfpoint{0pt}{0pt}}{\pgfpoint{\paperwidth}{-.25\paperheight}}
+\pgfsetfillcolor{digiPH_darkblue}
+\pgfusepath{fill}
+\pgftext[at=\pgfpoint{.5\paperwidth}{-.2\paperheight},center,bottom]{\pgfuseimage{large-logo}}
+\end{pgfpicture}%
+\vskip36pt%
+}{}
 
-	% vertikaler Abstand
-	\vskip0pt plus 1fill
-    \begin{center}
-    \begin{tabular}{c c}
-%
-    \insertauthor & \insertinstitute\\
-    \end{tabular}
-    \end{center}
-%
-%	% unteres Logo
-%%	\includegraphics[width=8cm,height=3cm]{logos/hor_logo}
-%
-}
 
 \setbeamertemplate{footline}{%
 \hfill\usebeamercolor[fg]{structure}\hspace*{10pt}\strut\vskip0pt%
