@@ -203,6 +203,16 @@
 \pgfplotsset{/pgfplots/legend pos/west/.style={/pgfplots/legend style={at={(0.03,0.50)},anchor=west}}}
 \pgfplotsset{/pgfplots/legend pos/outer north/.style={/pgfplots/legend style={at={(0.50,1.03)},anchor=south}}}
 
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+% Configuration of Tikz FlowChart
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black]
+
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{doublearrow} = [densely dotted,<->,>=stealth]
+\tikzstyle{dotted} = [loosely dotted,>=stealth]
+
 % Paket für SI-Einheiten
 \usepackage[binary-units]{siunitx}
 % Brüche aktivieren
