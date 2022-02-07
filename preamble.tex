@@ -24,8 +24,10 @@
 \usepackage{subfiles}
 
 \usepackage{booktabs}
-\usepackage{csquotes}
+\newcommand{\tabitem}{~\llap{\textbullet}} % fake bullet itemize in table cell
+\newcommand{\tabitems}{~~\llap{\textbullet}~~}
 
+\usepackage{csquotes}
 
 % Turn off the floating in article mode
 \usepackage{float}
@@ -68,8 +70,14 @@
 \makeatother
 
 % Change background single frame
-\newcommand{\ca}{\setbeamercolor{background canvas}{bg=digiPH_orange!10}}
+\newcommand{\cca}{\setbeamercolor{background canvas}{bg=digiPH_orange!10}}
+\newcommand{\cco}{\setbeamercolor{background canvas}{bg=digiPH_ocean!90}}
+\newcommand{\ccl}{\setbeamercolor{background canvas}{bg=digiPH_leaf!90}}
+\newcommand{\ccs}{\setbeamercolor{background canvas}{bg=digiPH_stem!90}}
 
+\newcommand{\ntex}{\setbeamercolor{normal text}{fg=white}\usebeamercolor*{normal text}}
+
+\newcommand{\myft}[1]{\frametitle{\textcolor{white}{#1}}}
 
 % Creating centering notes
 \newcommand{\notec}[1]{\note{\vfill
