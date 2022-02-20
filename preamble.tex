@@ -23,11 +23,19 @@
 \usepackage{setspace}
 \usepackage{subfiles}
 
+\usepackage{multirow}
 \usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{dcolumn} % pretty column descr R crosstab2tex
+\newcolumntype{d}{D{.}{.}{-1}}
+\usepackage{diagbox} % diagonal line on table
+\usepackage{array} %Mostly formatting columns and spacing
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}} %centering elemen in table
 \newcommand{\tabitem}{~\llap{\textbullet}} % fake bullet itemize in table cell
 \newcommand{\tabitems}{~~\llap{\textbullet}~~}
 
-\usepackage{csquotes}
+
+\usepackage[noorphans,font=itshape,begintext=``, endtext=",vskip=0.5ex]{quoting}
 
 % Turn off the floating in article mode
 \usepackage{float}
@@ -40,7 +48,7 @@
 % Config Slide Notes
 \usepackage{pgfpages}
 
-\setbeamercovered{transparent}
+%\setbeamercovered{transparent} % grey out overlay
 \setbeamertemplate{note page}{\pagecolor{gray!10}\insertnote}\usepackage{palatino}
 
 
