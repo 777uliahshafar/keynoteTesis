@@ -20,6 +20,10 @@
 \usepackage{graphicx}
 \graphicspath{{figures/}{../figures/}{../logos}}
 
+%Position figure in beamer using textblock*
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[texcoord,grid,gridunit=mm,gridcolor=red!10,subgridcolor=green!10]{eso-pic} %showgrid
+
 \usepackage{setspace}
 \usepackage{subfiles}
 
@@ -35,6 +39,10 @@
 \newcommand{\tabitems}{~~\llap{\textbullet}~~}
 
 
+\usepackage{xcolor}
+\def\ccta{\cellcolor{red!40}}
+
+
 \usepackage[noorphans,font=itshape,begintext=``, endtext=",vskip=0.5ex]{quoting}
 
 % Turn off the floating in article mode
@@ -46,10 +54,12 @@
 \UseCollection{xfrac}{plainmath}
 
 % Config Slide Notes
+
 \usepackage{pgfpages}
 
 %\setbeamercovered{transparent} % grey out overlay
 \setbeamertemplate{note page}{\pagecolor{gray!10}\insertnote}\usepackage{palatino}
+%\setbeamercolor{block body}{bg=white}
 
 
 %----------------------------------------------------------------------------------------
@@ -77,10 +87,11 @@
 \makeatother
 
 % Change background single frame
-\newcommand{\cca}{\setbeamercolor{background canvas}{bg=digiPH_orange!10}}
+\newcommand{\cca}{\setbeamercolor{background canvas}{bg=digiPH_orange!15}}
 \newcommand{\cco}{\setbeamercolor{background canvas}{bg=digiPH_ocean!90}}
 \newcommand{\ccl}{\setbeamercolor{background canvas}{bg=digiPH_leaf!90}}
 \newcommand{\ccs}{\setbeamercolor{background canvas}{bg=digiPH_stem!90}}
+\newcommand{\ccg}{\setbeamercolor{background canvas}{bg=digiPH_gray}}
 
 \newcommand{\ntex}{\setbeamercolor{normal text}{fg=white}\usebeamercolor*{normal text}}
 
