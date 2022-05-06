@@ -59,7 +59,6 @@
 
 %\setbeamercovered{transparent} % grey out overlay
 \setbeamertemplate{note page}{\pagecolor{gray!10}\insertnote}\usepackage{palatino}
-%\setbeamercolor{block body}{bg=white}
 
 
 %----------------------------------------------------------------------------------------
@@ -96,6 +95,15 @@
 \newcommand{\ntex}{\setbeamercolor{normal text}{fg=white}\usebeamercolor*{normal text}}
 
 \newcommand{\myft}[1]{\frametitle{\textcolor{white}{#1}}}
+
+%new block environemtn
+\newenvironment{blockcolor}
+  {\begin{alertblock}
+  }
+    {\newline\centering
+    \includegraphics[width=2cm,trim={0cm 10cm 0cm 9cm}, clip]{figures/batik.png}
+    \end{alertblock}
+    }
 
 % Creating centering notes
 \newcommand{\notec}[1]{\note{\vfill
