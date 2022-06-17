@@ -1,7 +1,7 @@
 \documentclass[table]{beamer}
 %\documentclass[handout,table]{beamer}
 
-%\includeonlyframes{tesis}
+%\includeonlyframes{title}
 \input{preamble}
 
 %\setbeameroption{hide notes} % Only slides
@@ -12,12 +12,11 @@
 \usepackage{comment}
 \usepackage{lipsum}
 
-\title{TESIS}
-\subtitle{Preferensi Pengunjung terhadap Ruang Publik di Kawasan Tepi Laut Senggol Parepare}
-\author[Shafar]{Muhammad Uliah Shafar\\ Pembimbing: Dr. Ars. Ir. Wijayanti, M.Eng\\\hspace{2.5cm} Prof. Dr. Ir. Atik Suprapti, M.T.}
+\title{Preferensi Pengunjung terhadap Ruang Publik di Kawasan Tepi Laut Senggol Parepare}
+\author[Shafar]{Pembimbing:\\Dr. Ars. Ir. Wijayanti, M.Eng\\Prof. Dr. Ir. Atik Suprapti, M.T. }
 \mode<presentation>{\keywords{Schlüsselwörter durch Komma getrennt}}
 
-\date[00.05.2018]{Mei 2022}
+\date[2022-06-20]
 
 \begin{document}
 
@@ -41,13 +40,19 @@
 %	\end{block}
 %\end{frame}
 
-{\setbeamercolor{background canvas}{bg=digiPH_orange!20}
-\begin{frame}
+{\setbeamercolor{background canvas}{bg=digiPH_undip}
+\setbeamercolor{normal text}{fg=white}
+\usebeamercolor[fg]{normal text}
+\begin{frame}[label=title]
+
 	%\maketitle
 	% \maketitle funktioniert auch im Article-Modus
 	 \titlepage
+     \large{Muhammad Uliah Shafar}
+\rule{\textwidth}{.4pt}
+\includegraphics[width=2cm]{logos/logo2.png}
 
-\notec{Assalamualaikum wr. wb, salam sejahtera bagi kita semua, kepada dewan juri yang saya hormati perkenalkan nama sya mh. uliah shfr, pada kesempatan kali ini saya akan mempersentsikan hasil penelitian saya yang berjudul preferensi pengunjung terhadap ruang publik di kawasan tepi laut senggol parepare}
+\notec{Assalamualaikum wr. wb, salam sejahtera bagi kita semua, kepada dewan penguji yang saya hormati perkenalkan nama sya mh. uliah shfr, pada kesempatan kali ini saya akan mempersentsikan hasil penelitian saya yang berjudul preferensi pengunjung terhadap ruang publik di kawasan tepi laut senggol parepare}
 \end{frame}
 }
 
@@ -144,8 +149,8 @@
 \vspace{4pt}
 \onslide<3->{\centering Tepi laut Senggol sekarang}
 }
-\notec{Pada gambar kita lihat tepi laut senggol sebelum pengembangan. Terdapat sejumlah tempat pkl yang belum tertata dan masih kurang menarik.  \scriptsize a2}
-\notec{Gambar ini merupakan tepi laut setelah pengembangan yaitu kondisi sekarang. Pengembangan ini cukup meningkatkan kondisi tepi laut sekarang dengan penambahan naungan, lantai, dan tempat makan.}
+\notec{Pada gambar kita lihat tepi laut senggol sebelum pengembangan. Gambar ini diambil pada tahun sebelum 2011.\scriptsize a2}
+\notec{Gambar selanjutnya yaitu tepi laut setelah pengembangan atau kondisi saat ini. Pengembangan ini jelas meningkatkan kondisi tepi laut sekarang dengan penambahan naungan, lantai, dan tempat makan. \scriptsize a3}
 
 \notec{Menurut Kim (2012), ruang merupakan tempat yang dapat meningkatkan kualitas hidup dengan  memenuhi kebutuhan individu.
 Pemenuhan kebutuhan individu dapat tercapai melalui pemahaman preferensi terhadap ruang yang lebih baik.\scriptsize a3}
@@ -287,7 +292,7 @@ diartikan sebagai fisik ruang publik dimana mencakup kualitas, sifat, fitur dari
 
 \end{frame}}
 {\cca
-\begin{frame}[label=tin]{Variabel penelitian: Elemen ruang \& pelaku}
+\begin{frame}[label=tin]{Variabel penelitian: Elemen ruang}
 
 \begin{center}
 \begin{exampleblock}{Elemen ruang}
@@ -306,62 +311,85 @@ diartikan sebagai fisik ruang publik dimana mencakup kualitas, sifat, fitur dari
 \end{exampleblock}
 
 %\raggedleft put this on the right
-\onslide<8->{
-\begin{minipage}{.40\textwidth}
-\begin{exampleblock}{Pelaku:}
-\onslide<8->{\Large\textbf{Gender}}
-\onslide<9->{\Large Usia}
-\onslide<10->{\textbf{Suku}}
-\onslide<11->{\small Pendidikan}
-\end{exampleblock}
-\end{minipage}}
 \end{center}
 \notec{adapun variabel terkait elemen ruang meliputi \scriptsize a1}
-\notec{adapun variabel terkait pelaku yaitu \scriptsize a2}
 \end{frame}}
 
-\begin{frame}[label=tin]{Kerangka Penelitian}
-\scalebox{0.7}{
-\begin{tikzpicture}[node distance=1em]
+\begin{frame}[label=tin]{Kerangka Konseptual}
+\scalebox{0.6}{
+\small
+\centering
+\begin{tikzpicture}[node distance=1cm]
 
-    \node (elm) [text width= .8\textwidth] {\centering\textbf{Variabel Penelitian}
+    \node (fit) [startstop, text width=2.5cm, xshift=-6cm] {\textbf{Preferensi terhadap ruang}};
 
-            \begin{tabular}{p{.33\textwidth}p{1.2em} p{1.2em}p{1.2em}p{1.2em}p{1.2em}p{1.2em}p{1.2em}p{1.2em}p{1.2em}p{1.2em}p{1.2em}p{1.2em}p{1.2em}p{1.2em}}
-\footnotesize
-\bfseries\diagbox[innerleftsep=10pt,innerrightsep=3pt,width=9em, height=3.3cm]{Elemen\\Ruang}{Pelaku} &
+	\node (soc) [startstop, right of=fit, text width=2.5cm, xshift=7cm] {\textbf{Ruang publik tepi laut}};
 
-{\rotatebox[origin=c]{90}{\parbox[c]{3cm}{\textbf{Gender}}}} & {\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{Laki-laki}}} & {\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{Perempuan}}} &
+	\node (rrt) [startstop, below of=fit, text width=2.5cm, yshift=-3.5cm] {\textbf{Pelaku}\\
 
-{\rotatebox[origin=c]{90}{\parbox[c]{3cm}{\textbf{Usia}}}} &
-{\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{Remaja}}}&
-{\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{Dewasa}}}&
-{\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{Manula}}}&
-
-
-{\rotatebox[origin=c]{90}{\parbox[c]{3cm}{\textbf{Suku}}}}&
-{\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{Bugis}}}&
-{\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{Non-bugis}}}&
-
-{\rotatebox[origin=c]{90}{\parbox[c]{3cm}{\textbf{Pendidikan}}}}&
-{\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{< SMA/sederajat}}}&
-{\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{SMA/sederajat}}}&
-{\rotatebox[origin=c]{90}{\parbox[c]{3.3cm}{Perguruan tinggi}}}\\
-\toprule
-\textbf{Aspek Ruang} &&&&&&&&&&&&&&\\
-Aksesibilitas &&&&&&&&&&&&&&\\
-Keamanan &&&&&&&&&&&&&&\\
-\textit{dst...} &&&&&&&&&&&&&&\\
-\textbf{Elemen Ruang} &&&&&&&&&&&&&&\\
-Jumlah pohon &&&&&&&&&&&&&&\\
-\tabitems \small{Sedikit pohon} &&&&&&&&&&&&&&\\
-\tabitems \small{Bbrapa pohon} &&&&&&&&&&&&&&\\
-Lebar jalan &&&&&&&&&&&&&&\\
-\textit{dst...} &&&&&&&&&&&&&&\\
+            \begin{tabular}{@{}p{.9\textwidth}@{}}
+    \tabitem Gender  \\
+    \tabitem Usia \\
+    \tabitem Suku \\
+    \tabitem Pendidikan \\
 \end{tabular}};
+
+	\node (met) [startstop, right of=rrt, text width=2.5cm, xshift=2.5cm] {\textbf{Aspek ruang}
+
+            \begin{tabular}{@{}p{.9\textwidth}@{}}
+    \tabitem Aksesibilitas  \\
+    \tabitem Keamanan \\
+    \tabitem Estetika \\
+    \tabitem Fasilitas \\
+\end{tabular}};
+
+
+	\node (ele) [startstop, right of=rrt, text width=4cm, xshift=7cm] {\textbf{Elemen ruang}
+
+            \begin{tabular}{@{}p{.9\textwidth}@{}}
+    \tabitem Jumlah pohon  \\
+    \tabitem Bentuk pohon \\
+    \tabitem Lebar jalan \\
+    \tabitem Permukaan jalan \\
+    \tabitem Warna bunga \\
+    \tabitem Jenis kursi \\
+    \tabitem Tingkat cahaya \\
+    \tabitem Orientasi elemen \\
+    \tabitem Tempat wisata air \\
+    \tabitem Bgnan penunjang \\
+    \tabitem Elemen air \\
+\end{tabular}};
+
+
+% \draw[thick,dashed] (-8.15, -20) rectangle (4.4, -7.8);
+
+    \node (jun) [startstop, below of=met, yshift= -3cm, text width= 4.5cm] {\textbf{Tepi laut Senggol}\\ Ruang A dan Ruang B};
+
+    \node (tem) [startstop, below of=jun, yshift= -.8cm, text width= 4.5cm] {Menghasilkan temuan preferensi pada ruang publik tepi laut};
+
+
+
+\draw [white,-{Stealth}] (fit) -- (soc) node(xu) [midway] {};
+\draw [-{Stealth[length=3mm,width=2mm]}] (fit) -- (-2,0);
+\draw [{Stealth[length=3mm,width=2mm]}-] (-2,0) -- (soc);
+\draw [arrow] (fit) -- (rrt);
+
+\draw [arrow] (soc) -- (ele);
+
+\draw [white,-{Stealth}] (met) -- (ele) node(yu) [midway] {};
+\draw [{Rays[n=3,scale=5, width=4, length=4]}-{Stealth[scale=2]}] (yu) -- (-.57,-7.6);
+
+\draw [arrow] (rrt) -- (met);
+
+\draw [arrow] (met) -- (ele);
+
+%\draw [arrow] (rec) -- (jun);
+%\draw [arrow] (elm) -- (rec);
+\draw [arrow] (jun) -- (tem);
 
 \end{tikzpicture}
 }
-\notec{Kerangka penelitian yang digunakan adalah sebagai berikut \scriptsize b1}
+\notec{Kerangka konseptual yang digunakan adalah sebagai berikut \scriptsize b1}
 \end{frame}
 
 \section{Metode Penelitian}
@@ -408,18 +436,18 @@ Lebar jalan &&&&&&&&&&&&&&\\
 
 \begin{frame}[label=obj]{Objek penelitian}
 \centering
-    \includegraphics[width=.8\textwidth]{figures/lokzi3.png}
-    \notec{Objek penelitian ini terbagi atas dua bagian ruang yang disebut ruang A dan B. Luas ruang A meliputi daerah yang berwarna kuning. Sedangkan ruang B meliputi area yang berwarna merah. Ruang A terbentang dari pelabuhan nusantara Parepare hingga batas ruang B. Sedangkan ruang B terbentang dari batas ruang A hingga pasar senggol.}
+    \includegraphics[width=.72\textwidth]{figures/lokzi3.png}
+    \notec{Objek penelitian ini terbagi atas dua bagian ruang yang disebut ruang A dan B. Luas ruang A meliputi daerah yang berwarna merah. Sedangkan ruang B meliputi area yang berwarna biru. Ruang A terbentang dari pelabuhan nusantara Parepare hingga batas ruang B. Sedangkan ruang B terbentang dari batas ruang A hingga pasar senggol di bagian utara.}
 \end{frame}
 
 {\ccg
 \begin{frame}[label=obj]
 \centering
 \begin{minipage}{.45\textwidth}
-    \includegraphics[width=\linewidth]{figures/mapsra.jpg}
+    \includegraphics[width=\linewidth]{figures/mapsra.png}
 \end{minipage}
 \begin{minipage}{.45\textwidth}
-    \includegraphics[width=\linewidth]{figures/mapsrb.jpg}
+    \includegraphics[width=\linewidth]{figures/mapsrb.png}
 \end{minipage}
 \notec{Berikut ini view kedua ruang terlihat dari peta.}
 \end{frame}
@@ -438,7 +466,7 @@ Lebar jalan &&&&&&&&&&&&&&\\
 
     Ruang B
 }
-\notec{Selanjutnya view dari ruang A, dan ruang B.}
+\notec{Selanjutnya potongan view dari ruang A, dan ruang B.}
 \end{frame}}
 
 \section{Pembahasan}
@@ -454,11 +482,11 @@ Lebar jalan &&&&&&&&&&&&&&\\
 
     \visible<4->{\includegraphics[width=.9\linewidth,trim= 1cm .3cm .5cm .55cm,clip]{figures/pieDidik}\\}
 \end{columns}
-\notec{Pada penelitian ini mayoritas responden adalah berjenis kelamin lali-laki dengan jumlah 58 orang.
+\notec{Pada penelitian ini mayoritas responden adalah berjenis kelamin lali-laki dengan jumlah 56 orang.
 
 35 dari mereka tergolong kelompok usia dewasa. Ini hampir setengah dari keseluruhan responden.
 
-Mayoritas responden merupakan orang bugis, ini dikarenakan kota parepare kebanyakan adalah orang bugis. Dan sisanya adlaah orang makassar ataupun toraja.
+Mayoritas responden merupakan orang bugis, ini dikarenakan kota parepare kebanyakan adalah bersuku bugis. Dan sisanya adlaah suku makassar ataupun toraja.
 
 Tingkat pendidikan terakhir responden kebanyakan adlaah perguruan tinggi dengan jumlah 43 orang. Ini melebihi stengah dari total responden.
 
@@ -798,7 +826,7 @@ Total  & 197 (74\%)  & 70 (26\%) & 267 (100\%)   \\
 \end{tabular}
 
 \notec{Berdasarkan 267 total respon terkait elemen yang disukai, respon digolongkn berdsrkan mcam-mcam ruang yang terdiri dari ruang A dan B. Dari 23 elemen pada variabel penelitian, hnya 15 yang memiliki nilai signifikan untuk ditampilkn pada tabel.
-Elemen yang paling disukai pada ruang A adlah lebar jalan lebih dari 3 meter serta penchyaan tinggi. Sedangkan pada ruang B, elemen yang disukai adalah kebnyakan orientasi yang menghadap ke laut. }
+Elemen yang paling disukai pada ruang A adlah lebar jalan yang lebih dari 3 meter serta penchyaan tinggi. Sedangkan pada ruang B, elemen yang disukai adalah kebnyakan orientasi yang menghadap ke laut. }
 
 \end{frame}
 }
@@ -921,14 +949,15 @@ Elemen seperti orientasi elemen, dan tingkat cahaya mayoritas berkontribusi pada
 
 
 {\cco
-\begin{frame}[label=kes] \vspace{4pt}
-\myft{Kesimpulan}
+\setbeamercolor{background canvas}{bg=digiPH_undip}
 \setbeamercolor{normal text}{fg=white}
 \usebeamercolor[fg]{normal text}
+\begin{frame}[label=kes] \vspace{4pt}
+\myft{Kesimpulan}
 Setelah melakukan analisis, sejumlah pertanyaan penelitian terjawab yang kemudian disimpulkan sebagai berikut:
 
 \begin{itemize}
-    \item<1-> Hasil dari studi ini mengindikasikan ruang A paling disukai dibandingkan ruang B di tepi laut Senggol.
+    \item<1-> Hasil dari studi ini mengindikasikan bahwa ruang A paling disukai dibandingkan ruang B di tepi laut Senggol. Ini menunjukan bahwa orang memberi perhatian pada elemen-elemen yang dimiliki ruang publik. Berbeda dengan penemuan Y. Zhang dimana orang condong pada tempat yang alami tanpa intervensi orang (lingkungan binaan).
     \item<2-> Alasan yang mendasari orang memiliki preferensi pada ruang tertentu adalah aspek fasilitas. Kebanyakan orang menyukai aspek ini. Oleh karena itu, aspek fasilitas seharusnya diutamakan dalam desain dan pengelolaan ruang terbuka tepi laut.
     \item<3-> Elemen yang paling disukai oleh pengunjung adalah lebar jalan dalam memilih ruang tertentu. Pernyataan ini mendukung aspek aksesibilitas yang merupakan aspek yang disukai kedua.
 \end{itemize}
