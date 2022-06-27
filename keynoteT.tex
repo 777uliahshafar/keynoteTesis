@@ -1,7 +1,7 @@
 \documentclass[table]{beamer}
 %\documentclass[handout,table]{beamer}
 
-%\includeonlyframes{title}
+%\includeonlyframes{tin}
 \input{preamble}
 
 %\setbeameroption{hide notes} % Only slides
@@ -271,7 +271,10 @@ diartikan sebagai fisik ruang publik dimana mencakup kualitas, sifat, fitur dari
 \end{frame}
 
 
-{\cca
+
+{
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.4,inner sep=0] {\includegraphics[height=\paperheight,width=\paperwidth]{bg1.png}};}
 \begin{frame}[label=tin]{Variabel Penelitian: Aspek ruang}
 \begin{exampleblock}{Aksesibilitas}
 \onslide<1->{ Kemampuan individu untuk mendekati sesuatu (La Rosa et al. , 2018).
@@ -418,7 +421,6 @@ diartikan sebagai fisik ruang publik dimana mencakup kualitas, sifat, fitur dari
 \textbf{Metode pengambilan sampel}
 \begin{itemize}
     \item Teknik penyampelan adalah probabilitas dengan metode \textit{stratified random sampling}.
-    \item Kriteria
     \item Jumlah sampel : 85 observasi
 \end{itemize}
 }
@@ -429,9 +431,12 @@ diartikan sebagai fisik ruang publik dimana mencakup kualitas, sifat, fitur dari
 \item Analisis Deskriptif Analitik
 \item Analisis Crosstabulasi
 \item Analisis Biplot
-\item[] \item Perangkat lunak : R untuk Crosstab dan Minitab untuk Biplot
+\item[] \item Perangkat lunak : (1) \textbf{R} untuk Crosstab dan (2) \textbf{Minitab} untuk Biplot
 \end{itemize}}
 \end{columns}
+\notec{Penelitian ini menggunakan pendekatan kualitatif dan kuantitatif dengan penggunaan survei kuesioner.}
+\notec{Data yang diambil adalah jawaban yang didapatkan dari responden pengunjugn tepi laut senggol melalui pertanyaan kuesioner.}
+\notec{Teknik penyampelan adalah probalitas...}
 \end{frame}}
 
 \begin{frame}[label=obj]{Objek penelitian}
@@ -947,23 +952,19 @@ Elemen seperti orientasi elemen, dan tingkat cahaya mayoritas berkontribusi pada
 \end{frame}}
 \end{withoutheadline}
 
-
-{\cco
-\setbeamercolor{background canvas}{bg=digiPH_undip}
-\setbeamercolor{normal text}{fg=white}
-\usebeamercolor[fg]{normal text}
-\begin{frame}[label=kes] \vspace{4pt}
-\myft{Kesimpulan}
+\begin{frame}{Kesimpulan}\vspace{4pt}
 Setelah melakukan analisis, sejumlah pertanyaan penelitian terjawab yang kemudian disimpulkan sebagai berikut:
-
 \begin{itemize}
     \item<1-> Hasil dari studi ini mengindikasikan bahwa ruang A paling disukai dibandingkan ruang B di tepi laut Senggol. Ini menunjukan bahwa orang memberi perhatian pada elemen-elemen yang dimiliki ruang publik. Berbeda dengan penemuan Y. Zhang dimana orang condong pada tempat yang alami tanpa intervensi orang (lingkungan binaan).
     \item<2-> Alasan yang mendasari orang memiliki preferensi pada ruang tertentu adalah aspek fasilitas. Kebanyakan orang menyukai aspek ini. Oleh karena itu, aspek fasilitas seharusnya diutamakan dalam desain dan pengelolaan ruang terbuka tepi laut.
-    \item<3-> Elemen yang paling disukai oleh pengunjung adalah lebar jalan dalam memilih ruang tertentu. Pernyataan ini mendukung aspek aksesibilitas yang merupakan aspek yang disukai kedua.
 \end{itemize}
+\end{frame}
 
-
-\end{frame}}
+\begin{frame}{Kesimpulan}\vspace{4pt}
+\begin{itemize}
+    \item Elemen yang paling disukai oleh pengunjung adalah lebar jalan (>3m) dalam memilih ruang tertentu. Pernyataan ini berkontribusi terhadap tingginya preferensi pada aspek aksesibilitas.
+\end{itemize}
+\end{frame}
 
 %-------------------------------------------------------------------------------------
 \begin{comment}
@@ -971,7 +972,9 @@ Setelah melakukan analisis, sejumlah pertanyaan penelitian terjawab yang kemudia
 \end{comment}
 {
 \usebackgroundtemplate{%
-\tikz\node[opacity=0.3,inner sep=0] {\includegraphics[height=\paperheight,width=\paperwidth]{pe1.png}};}
+\tikz\node[inner sep=0] {\includegraphics[height=\paperheight,width=\paperwidth]{bg3.png}};}
+\setbeamercolor{normal text}{fg=white}
+\usebeamercolor[fg]{normal text}
 \begin{frame}<beamer>{}
 \bibliographystyle{apalike}
 {\tiny

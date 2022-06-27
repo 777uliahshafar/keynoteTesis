@@ -86,11 +86,13 @@
 \makeatother
 
 % Change background single frame
-\newcommand{\cca}{\setbeamercolor{background canvas}{bg=digiPH_orange!15}}
+\newcommand{\cca}{\usebackgroundtemplate{%
+\tikz\node[inner sep=0] {\includegraphics[height=\paperheight,width=\paperwidth]{bg5.png}};}}
 \newcommand{\cco}{\setbeamercolor{background canvas}{bg=digiPH_ocean!90}}
 \newcommand{\ccl}{\setbeamercolor{background canvas}{bg=digiPH_leaf!90}}
 \newcommand{\ccs}{\setbeamercolor{background canvas}{bg=digiPH_stem!90}}
-\newcommand{\ccg}{\setbeamercolor{background canvas}{bg=digiPH_gray}}
+\newcommand{\ccg}{\usebackgroundtemplate{%
+\tikz\node[inner sep=0] {\includegraphics[height=\paperheight,width=\paperwidth]{bg4.png}};}}
 
 \newcommand{\ntex}{\setbeamercolor{normal text}{fg=white}\usebeamercolor*{normal text}}
 
